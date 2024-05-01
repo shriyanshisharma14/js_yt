@@ -82,9 +82,54 @@ console.log(valueInBool);//=>false
 */
 
 //Conversion to string
-/* */
+/* 
 let num=33
 console.log(typeof num);//=>number
 let valueInString=String(num);
 console.log(typeof valueInString); //string
 console.log(valueInString);//=>"33"
+*/
+
+/*
+let value=7
+let negativeValue=-value;
+console.log(negativeValue); //=> -7
+//basic arithmetic operations
+//console.log(2+2)
+//console.log(2-2)
+//console.log(2*2)
+//console.log(2**3)
+//console.log(2/3)
+//console.log(2%3)
+*/
+
+/*
+//string concatenation
+let str1="hello"
+let str2=" world"
+let str3=str1 + str2
+console.log(str3);//=> hello world
+*/
+
+/*
+console.log(1+"2"); //=> 12
+console.log("1"+2); //=>12
+console.log("1"+2+3);//=>123
+console.log(1+2+"3");//=>33
+console.log(2+3*2%7); //not readable, use parenthesis =>8
+console.log(true);//=>true
+console.log(+true)//=>1 ('+' changes to numeric value)
+console.log(+"")//=>0
+*/
+/*
+let counter=100
+counter++;
+console.log(counter);//=>101
+
+let counter=100
+++counter;
+console.log(counter); //=>101
+*/
+
+//link to read type conversion
+//https://tc39.es/ecma262/#sec-abstract-operations
