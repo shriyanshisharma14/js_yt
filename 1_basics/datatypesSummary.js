@@ -19,7 +19,7 @@ const bigNo=12345678901234567890n; //use 'n' to convert to bigint
 
 /*
 Non-Primitive examples
-*/
+
 
 const heroes=["Ironman","Bheem","Ben"] //array
 let myObj=  
@@ -37,5 +37,29 @@ console.log(typeof myObj); //object
 console.log(typeof myFunc); //function (but this is function object only if we go into details)
 /*Note: Every 3 non-primitive datatypes are of object type*/
 
-console.log(typeof id); //symbol
+//console.log(typeof id); //symbol
+ 
+//*******************************************************************************//
 
+/* Memory allocation */
+//Stack -> Primitive ......Heap-> Non-Primitive
+/*stack (once copy of name is given to name2 so any change in name2 doesnt affect name)
+Thus it is {call by value} 
+
+let name="Riyansh"
+let name2=name;
+name2="Shruti"
+console.log(name);
+console.log(name2);
+*/
+
+/* Heap (here copy isn't given but reference is passed) */
+let user1 ={
+   email:"abc@gmail.com",
+   upi:"123@sbi"
+}
+let user2=user1
+user2.email="def@gmail.com"
+
+console.log(user1.email)
+console.log(user2.email);
